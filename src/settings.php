@@ -1,4 +1,14 @@
 <?php
+
+// Load .env configs.
+$dotEnv = new \Dotenv\Dotenv(dirname(__DIR__));
+$dotEnv->load();
+$dotEnv->required([
+    'APP_SLACK_TEAM_NAME',
+    'APP_SLACK_ACCESS_TOKEN',
+]);
+
+
 return [
     'settings' => [
 

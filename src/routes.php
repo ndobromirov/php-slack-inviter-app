@@ -16,8 +16,9 @@ $app->get('/', function (RequestInterface $request, ResponseInterface $response)
 });
 
 $app->post('/', function (RequestInterface $request, ResponseInterface $response) {
+    $post = $request->getParsedBody();
+
     return $response
         ->withStatus(302)
         ->withHeader('Location', '/');
-
 });
