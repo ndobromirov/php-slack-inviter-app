@@ -7,6 +7,8 @@ use PhpSlackInviter\InviteHandler;
 // TODO: Add CSRF.
 // TODO: Add validations.
 // TODO: Update tests.
+// TODO: Improve stability.
+// TODO: Add optional recaptcha configs.
 
 $app->get('/', function (RequestInterface $request, ResponseInterface $response) {
     $settings = $this->get('settings');
